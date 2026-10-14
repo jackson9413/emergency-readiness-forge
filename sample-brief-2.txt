@@ -1,0 +1,16 @@
+HOUSEHOLD: 3 adults (couple + 22yo college kid home for break).
+REGION: Texas, Harris County (Houston metro).
+HOME: 2-story townhome, built 2008, no basement, attached garage.
+HAZARDS: hurricane, flood, severe-storm, power-outage (think Texas grid).
+WORK: both adults commute, kid not currently employed.
+MOBILITY: no mobility issues.
+MEDICAL: husband has sleep apnea (CPAP).
+VEHICLES: 2 sedans.
+UTILITIES: gas, electric (TXU), water.
+PETS: 2 cats (indoor, shy).
+No seniors, no kids at home.
+CONCERNS:
+- Harvey flooding was bad. We're not in a high-risk zone but the streets
+  flood.
+- Long power outages after ice storms.
+- What's the right amount of generator/generator-alternative to keep on hand?

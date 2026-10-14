@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emergency-readiness-forge</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="logo">🆘 <b>emergency-readiness-forge</b></div>
+    <div class="sub">paste a household brief — get a 12-month readiness plan, go-bag, evacuation plan, comms tree, and a 0-100 readiness score.</div>
+  </div>
+</header>
+
+<main>
+  <section class="panel">
+    <h2>1. Household brief</h2>
+    <p class="hint">A free-form description works. Try the samples ↓</p>
+    <div class="samples" id="samples"></div>
+    <textarea id="brief" rows="16" placeholder="Describe your household — region, hazards, family, pets, medical, vehicles, utilities..."></textarea>
+    <div class="row">
+      <button id="run" class="primary">▶ Analyze</button>
+      <button id="clear" class="ghost">Clear</button>
+      <span class="ts" id="ts"></span>
+    </div>
+  </section>
+
+  <section class="panel hidden" id="results">
+    <h2>2. Result</h2>
+    <div class="score-card" id="score-card"></div>
+    <div id="profile" class="block"></div>
+    <div id="hazards" class="block"></div>
+    <div id="calendar" class="block"></div>
+    <div id="gobag" class="block"></div>
+    <div id="shelter" class="block"></div>
+    <div id="evac" class="block"></div>
+    <div id="comm" class="block"></div>
+    <div id="flags" class="block"></div>
+
+    <div class="row after-result">
+      <div class="rating">
+        <span>Rate this session:</span>
+        <button data-r="1">★</button>
+        <button data-r="2">★</button>
+        <button data-r="3">★</button>
+        <button data-r="4">★</button>
+        <button data-r="5">★</button>
+        <span id="rating-current"></span>
+      </div>
+      <input id="notes" placeholder="Optional note..." />
+      <button id="save" class="ghost">Save</button>
+      <button id="export-md" class="ghost">Export Markdown</button>
+      <button id="export-json" class="ghost">Export JSON</button>
+      <span class="ts" id="export-status"></span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Sessions</h2>
+    <p class="hint">Saved locally on this machine. Click to load.</p>
+    <div id="sessions-list"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="bar foot">No API keys. No LLM. No external network calls. Pure Flask + stdlib. <a href="https://github.com/jackson9413/emergency-readiness-forge" target="_blank">github.com/jackson9413/emergency-readiness-forge</a></div>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>
